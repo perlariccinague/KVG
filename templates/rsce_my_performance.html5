@@ -1,0 +1,4 @@
+<div class="performance-box">
+    <img src="{{file::<?= $this->image ?>}}" alt="">
+    <h3><?= $this->titel ?></h3>
+</div>

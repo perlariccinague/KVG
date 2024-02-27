@@ -1,0 +1,7 @@
+<div class="block-box">
+    <img src="{{file::<?= $this->image ?>}}" alt="">
+    <h3><?= $this->titel ?></h3>
+    <p><?= $this->description ?></p>
+  <!--  <div class="block-link-button"><a href="{{link_url::<?/*= $this->link */?>}}"><span>Mehr</span><img src="files/assets/layout/pfeil-left-white.svg" alt=""></a></div>-->
+    <div class="block-link-button"><a href="{{link_url::<?= $this->link ?>}}">Mehr</a></div>
+</div>

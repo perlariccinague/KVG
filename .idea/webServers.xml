@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d0f89391-b039-47f6-ac41-3a1e72706aec" name="server" url="http://ftp.kardiologe-weimar.de">
+        <fileTransfer rootFolder="/contao53" host="ftp.kardiologe-weimar.de" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

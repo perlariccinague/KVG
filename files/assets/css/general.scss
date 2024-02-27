@@ -1,0 +1,180 @@
+@import "variables";
+
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  src: url("../fonts/OpenSans-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  src: url("../fonts/OpenSans-SemiBold.ttf");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  src: url("../fonts/OpenSans-Italic.ttf");
+  font-style: italic;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  src: url("../fonts/OpenSans-Light.ttf");
+  font-style: normal;
+  font-weight: 300;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font: normal normal normal 22px/30px Open Sans;
+}
+
+.welcome, .performances {
+  width: 90%;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+.welcome-teaser {
+  h2 {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: $orange;
+    text-transform: uppercase;
+    font: normal normal 600 50px/36px Open Sans;
+    &:before, &:after {
+      content: "";
+      position: absolute;
+      border-top: 2px solid $orange;
+      top: 60%;
+      width: 100%;
+    }
+    &:before {
+      margin-right: 15px;
+      right: 100%;
+    }
+    &:after {
+      margin-left: 15px;
+      left: 100%;
+    }
+  }
+}
+
+.block-link-button, .button p, .teaser-left p {
+  a {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    padding: 5px 30px;
+    background: transparent;
+    text-align: center;
+    font: normal normal normal 24px/36px Open Sans;
+    color: $blue;
+    text-transform: uppercase;
+    transition: color .3s;
+    &:before {
+      left: 0;
+      z-index: -2;
+      width: 100%;
+      height: 100%;
+      box-shadow: 0px 5px 10px #00000029;
+      border: 2px solid #639EC8;
+      border-radius: 10px;
+    }
+    &:after {
+      display: inline-block;
+      right: -40px;
+      z-index: -1;
+      box-sizing: content-box;
+      width: 45px;
+      height: 50px;
+      border-radius: 0 10px 10px 0;
+      background: $blue url("/files/assets/layout/pfeil-left-white.svg") no-repeat 50% center;
+      transition: all .3s;
+    }
+    &:before, &:after {
+      position: absolute;
+      content: "";
+      top: 0;
+    }
+    &:hover {
+      color: white;
+      &:after {
+        width: 100%;
+        padding-left: 42px;
+        border-radius: 10px;
+        background-position-x: 90%;
+      }
+    }
+  }
+}
+
+/*
+.button p {
+  a {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    padding: 5px 30px;
+    background: transparent;
+    text-align: center;
+    font: normal normal normal 24px/36px Open Sans;
+    color: $blue;
+    text-transform: uppercase;
+    transition: color .3s;
+    .span-p {
+      box-shadow: 0px 5px 10px #00000029;
+      border: 2px solid #639EC8;
+      border-radius: 10px;
+      z-index: -2;
+      width: 100%;
+      height: 100%;
+      display: block;
+      padding: 5px 20px;
+      position: relative;
+      text-align: center;
+      transition: color 250ms;
+    }
+    .button-image {
+      display: flex;
+      right: -109px;
+      z-index: -1;
+      box-sizing: content-box;
+      background: #639EC8;
+      width: 45px;
+      height: 50px;
+      border-radius: 0 10px 10px 0;
+      position: relative;
+      top: -87px;
+      justify-content: center;
+    }
+    &:hover {
+      .span-p {
+        color: white;
+      }
+      & > .button-image {
+        width: 100%;
+        padding-left: 9px;
+        border-radius: 10px;
+        right: 0;
+      }
+    }
+  }
+}*/
