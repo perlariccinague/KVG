@@ -94,6 +94,14 @@
   }
 }
 
+.welcome, .handling {
+  padding: 30px 0 100px;
+}
+
+.handling {
+  padding-bottom: 50px;
+}
+
 
 .welcome, .performances {
   .content-element-group {
@@ -101,7 +109,7 @@
     font: normal normal normal 22px/30px Open Sans;
     .welcome-teaser {
       .rte {
-        max-width: 1000px;
+        max-width: 1315px;
         margin: 0 auto;
       }
     }
@@ -109,7 +117,6 @@
       display: flex;
       justify-content: space-between;
       width: 90%;
-      max-width: 1200px;
       margin: 50px auto;
       flex-wrap: wrap;
       padding-top: 45px;
@@ -189,7 +196,10 @@
     .content-text {
       text-align: center;
       margin-top: -25px;
-      font: normal normal normal 30px/70px Open Sans;
+      padding-bottom: 50px;
+      p {
+        font: normal normal normal 30px/70px Open Sans;
+      }
     }
   }
   .buttons-links {

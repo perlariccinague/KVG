@@ -1,14 +1,14 @@
 <div class="slider-container">
     <div class="slides">
         <?php foreach($this->slide as $key=>$slide): ?>
-            <div class="item ">
+            <div class="slide ">
                 <img src="{{file::<?= $slide->image ?>}}">
             </div>
         <?php endforeach; ?>
     </div>
     <div class="button">
-        <button class="prev"><img src="files/assets/layout/arrow-left-short.svg" alt=""></button>
-        <button class="next"><img src="files/assets/layout/Pfeil-right-short.svg" alt=""></button>
+        <button class="prev-slider"><img src="files/assets/layout/arrow-left-short.svg" alt=""></button>
+        <button class="next-slider"><img src="files/assets/layout/Pfeil-right-short.svg" alt=""></button>
     </div>
 </div>
 

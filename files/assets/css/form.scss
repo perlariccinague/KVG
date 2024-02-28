@@ -1,0 +1,82 @@
+@import "variables";
+
+.footer-right {
+  background: white;
+  padding: 30px 0;
+  border-radius: 10px;
+  .ce_form {
+    .formbody {
+      .widget-text, .widget-textarea {
+        width: 90%;
+        margin: 15px auto;
+        label {
+          font: italic normal normal 16px/22px Open Sans;
+          text-transform: uppercase;
+          color: #6D6D6D;
+        }
+        input, textarea {
+          background: transparent;
+          border: 0;
+          font-size: 15px;
+          cursor: pointer;
+          width: 100%;
+          padding: 10px 14px;
+          box-sizing: border-box;
+          outline: none;
+          display: block;
+          border-top: 1px solid #6D6D6D ;
+          transition: background-color 250ms;
+        }
+        textarea {
+          resize: none;
+        }
+      }
+    }
+  }
+  .form-teaser {
+    width: 90%;
+    margin: 0 auto;
+    h3 {
+      font: normal normal normal 18px/24px Open Sans;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.footer-right .widget.widget-submit {
+  padding-bottom: 10px;
+  text-align: right;
+  padding-right: 34px;
+  /*display: flex;
+  justify-content: center;*/
+  .submit {
+    outline: none;
+    border: none;
+    font: normal normal normal 18px/36px Open Sans;
+    &:before {
+      box-shadow: none;
+    }
+   /* &:after {
+      display: none;
+    }*/
+  }
+  /*.pfeil {
+    background: #639ec8;
+    width: 45px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    right: 24px;
+    position: relative;
+    padding: 0;
+    top: 2px;
+    img {
+      width: 20px;
+    }
+  }
+  &:hover > .pfeil {
+    background: crimson;
+    width: 100%;
+  }*/
+}

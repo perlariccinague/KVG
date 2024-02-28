@@ -1,9 +1,9 @@
-const prev = document.querySelector(".prev");
-const next = document.querySelector(".next");
+const prevBtn = document.querySelector(".prev-slider");
+const nextBtn = document.querySelector(".next-slider");
 let cCarouselInner = document.querySelector(".slides");
 let leftValue = 0;
 
-let carouselInnerWidth = cCarouselInner.getBoundingClientRect().width;
+/*let carouselInnerWidth = cCarouselInner.getBoundingClientRect().width;
 
 const totalMovementSize =
     parseFloat(
@@ -21,4 +21,4 @@ next.addEventListener("click", () => {
         leftValue -= totalMovementSize;
         cCarouselInner.style.left = leftValue + "px";
     }
-});
+});*/

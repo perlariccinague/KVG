@@ -2,6 +2,111 @@
 
 #footer {
   width: 100%;
-  padding: 100px 0 90px;
-  background: #639EC8 url("/files/assets/layout/MicrosoftTeams-image (8).png") no-repeat right 100%;
+ /* padding: 100px 0 90px;*/
+  background: url("/files/assets/layout/MicrosoftTeams-image (8).png") no-repeat right top;
+  background-size: 100%;
+}
+
+.footer {
+  width: 90%;
+  max-width: $content-width;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 150px 0 50px;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  color: white;
+  width: 35%;
+  h3 {
+    font: normal normal 600 36px/49px Open Sans;
+    text-transform: uppercase;
+    padding: 30px 0 60px;
+  }
+  .content-element-group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .content-text {
+      h2 {
+        font: normal normal 600 24px/33px Open Sans;
+        text-transform: uppercase;
+      }
+      p {
+        font: normal normal 300 18px/30px Open Sans;
+        a {
+          color: white;
+          transition: color 250ms;
+          &:hover {
+            color: $orange;
+          }
+        }
+      }
+    }
+    .address {
+      p {
+        a , span {
+          position: relative;
+          padding-left: 30px;
+          &:before {
+            position: absolute;
+            top: 4px;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            content: "";
+          }
+        }
+        a {
+          &:first-child {
+            &:before   {
+              background: url("/files/assets/layout/phone.svg") no-repeat;
+            }
+          }
+          &:last-child {
+           &:before {
+             background: url("/files/assets/layout/mail.svg") no-repeat;
+           }
+          }
+        }
+        span {
+          &:before {
+            background: url("/files/assets/layout/fax.svg") no-repeat;
+          }
+        }
+      }
+    }
+  }
+  .mod_customnav {
+    margin-top: -40px;
+    ul {
+      li {
+        font: normal normal 600 18px/24px Open Sans;
+        text-transform: uppercase;
+        a {
+          color: white;
+          transition: color 250ms;
+          &:hover {
+            color: $orange;
+          }
+        }
+      }
+    }
+  }
+}
+
+.map-icon {
+  position: absolute;
+  left: 65vw;
+  top: 7vw;
+  .marker {
+    color: white;
+    transition: color 250 ms;
+    &:hover {
+      color: $orange;
+    }
+  }
 }
