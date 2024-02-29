@@ -11,7 +11,6 @@ slides.forEach(function(slide,index) {
 
 
 const showImage = () => {
-    console.log('Current Count: ', currentCount);
     slides = document.querySelectorAll('.item');
     let previousItem;
     let nextItem;

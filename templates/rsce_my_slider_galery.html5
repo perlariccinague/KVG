@@ -7,9 +7,10 @@
         <?php endforeach; ?>
     </div>
     <div class="button">
-        <button class="prev-slider"><img src="files/assets/layout/arrow-left-short.svg" alt=""></button>
-        <button class="next-slider"><img src="files/assets/layout/Pfeil-right-short.svg" alt=""></button>
+        <button class="prev-slider" onclick="prevSlide()"><img src="files/assets/layout/arrow-left-short.svg" alt=""></button>
+        <button class="next-slider" onclick="nextSlide()"><img src="files/assets/layout/Pfeil-right-short.svg" alt=""></button>
     </div>
+    <div class="dots"></div>
 </div>
 
 

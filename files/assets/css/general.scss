@@ -213,6 +213,15 @@ p {
     }
     &:hover {
       background-color: $orange;
+      & > .icon-content {
+        display: none;
+      }
+      & > .icon-hover {
+        display: initial;
+      }
+    }
+    .icon-hover {
+      display: none;
     }
   }
 }

@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="slide">
+    <div class="slide-block">
         <div class="slider-inner">
             <?php foreach($this->slide as $key=>$slide): ?>
                 <div class="item">

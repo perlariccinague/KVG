@@ -24,8 +24,8 @@
 
 .appointment-block {
   position: absolute;
-  top: 35vh;
-  right: 7vw;
+  top: 26vw;
+  right: 8vw;
   z-index: 1;
   transform: translateY(-50%);
   background: url("/files/assets/layout/kalender.svg") no-repeat;
@@ -252,8 +252,9 @@
     float: right;
     flex-wrap: wrap;
     padding: 100px 0;
+    align-items: center;
     .teaser-left {
-      width: 35%;
+      width: 30%;
       .content-text {
         h2 {
           font: normal normal 600 50px/36px Open Sans;
@@ -262,6 +263,52 @@
       }
     }
   }
+}
+
+#teams {
+  background: url("/files/assets/layout/background-team.png") no-repeat;
+  width: 100%;
+  background-size: 100%;
+  height: auto;
+  position: relative;
+  z-index: 2;
+  margin-top: -11px;
+  padding-bottom: 80px;
+  &.practice .text-gallery .teaser-left .content-text {
+    color: white;
+  }
+}
+
+.biography {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  .text-image {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .content-element-group {
+      width: 40%;
+     .content-text {
+       h2 {
+         font: normal normal 600 50px/36px Open Sans;
+         text-transform: uppercase;
+         color: $orange;
+       }
+       h3 {
+         font: normal normal normal 30px/36px Open Sans;
+         text-transform: uppercase;
+         margin-top: -15px;
+         padding-bottom: 15px;
+         color: $orange;
+       }
+     }
+    }
+  }
+}
+
+.appointment-booking {
+  padding: 50px 0;
 }
 
 
