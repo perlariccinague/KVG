@@ -1,0 +1,101 @@
+@import "variables";
+
+.welcome .content-accordion {
+  padding-top: 60px;
+  border-bottom: none;
+  .handorgel__header {
+    position: relative;
+    margin: 20px auto;
+    button {
+      border-top: none;
+      font: normal normal 600 24px/36px Open Sans;
+      text-transform: uppercase;
+      color: $blue;
+      padding: 15px 110px;
+      position: relative;
+      &:before, &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      &:before {
+        width: 40px;
+        height: 55px;
+        left: 25px;
+      }
+      &:after {
+        right: 30px;
+        width: 50px;
+        height: 50px;
+        background: url("/files/assets/layout/accordion.svg") no-repeat 0/cover;
+        transition: background 250ms;
+      }
+    }
+    &:not(:first-child) {
+      border-top: 1px solid black;
+      padding-top: 15px;
+    }
+    &--opened {
+      button {
+        &:after {
+          background: url("/files/assets/layout/accordion-active.svg") no-repeat 0/cover;
+        }
+      }
+    }
+    &:hover {
+      button:after {
+        background: url("/files/assets/layout/accordion-orange.svg") no-repeat 0/cover;
+      }
+    }
+  }
+  .handorgel__content {
+    background-color: transparent;
+    text-align: left;
+    width: 90%;
+    max-width: 1136px;
+    padding: 0 110px;
+    border-top: none;
+    .handorgel__content__inner {
+      padding: 0 0 20px;
+      p {
+        line-height: 34px;
+      }
+    }
+  }
+}
+
+.welcome .content-accordion #handorgel1-fold1-header button:before {
+  background: url("/files/assets/layout/1.svg") no-repeat;
+}
+.welcome .content-accordion #handorgel1-fold2-header button:before {
+  background: url("/files/assets/layout/2.svg") no-repeat;
+}
+.welcome .content-accordion #handorgel1-fold3-header button:before {
+  background: url("/files/assets/layout/3.svg") no-repeat;
+}
+.welcome .content-accordion #handorgel1-fold4-header button:before {
+  background: url("/files/assets/layout/4.svg") no-repeat;
+}
+.welcome .content-accordion #handorgel1-fold5-header button:before {
+  background: url("/files/assets/layout/5.svg") no-repeat;
+}
+.welcome .content-accordion #handorgel1-fold6-header button:before {
+  background: url("/files/assets/layout/6.svg") no-repeat;
+}
+.welcome .content-accordion #handorgel1-fold7-header button:before {
+  background: url("/files/assets/layout/7.svg") no-repeat;
+}
+.welcome .content-accordion #handorgel1-fold8-header button:before {
+  background: url("/files/assets/layout/8.svg") no-repeat;
+}
+.welcome .content-accordion #handorgel1-fold9-header button:before {
+  background: url("/files/assets/layout/9.svg") no-repeat;
+}
+.welcome .content-accordion #handorgel1-fold10-header button:before {
+  background: url("/files/assets/layout/10.svg") no-repeat;
+  width: 71px;
+  left: 5px;
+}
+
+

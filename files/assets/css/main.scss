@@ -124,7 +124,7 @@
         width: 30%;
         padding: 15px;
         text-align: center;
-        img {
+        .icon {
           width: 97px;
           height: 90px;
         }
@@ -197,7 +197,7 @@
       text-align: center;
       margin-top: -25px;
       padding-bottom: 50px;
-      p {
+      h3 {
         font: normal normal normal 30px/70px Open Sans;
       }
     }
@@ -212,33 +212,37 @@
     .content-text {
       width: 48%;
       &#appointment p a {
-        color: $orange;
-        &:before {
-          border: 2px solid $orange;
+        border: 2px solid $orange;
+        .button-text {
+          color: $orange;
         }
-        &:after {
+        .span-icon {
           background-color: $orange;
         }
         &:hover {
-          color: white;
+          .button-text {
+            color: white;
+          }
         }
       }
     }
   }
 }
 
-.teaser-left p {
+.teaser-left .block-link-button {
   a {
-    color: white;
-    &:before {
-      border: 2px solid white;
-      box-shadow: none;
+    border: 2px solid white;
+    box-shadow: none;
+    .button-text {
+      color: white;
     }
-    &:after {
-      background: white url("/files/assets/layout/arrow-left-short-3.svg") no-repeat 50% center;
+    .span-icon {
+      background-color: white;
     }
     &:hover {
-      color: $blue;
+      & .button-text {
+        color: $blue;
+      }
     }
   }
 }

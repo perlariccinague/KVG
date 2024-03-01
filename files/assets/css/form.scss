@@ -46,37 +46,16 @@
 .footer-right .widget.widget-submit {
   padding-bottom: 10px;
   text-align: right;
-  padding-right: 34px;
+  padding-right: 30px;
   /*display: flex;
   justify-content: center;*/
   .submit {
     outline: none;
-    border: none;
-    font: normal normal normal 18px/36px Open Sans;
-    &:before {
-      box-shadow: none;
-    }
-   /* &:after {
-      display: none;
-    }*/
-  }
-  /*.pfeil {
-    background: #639ec8;
-    width: 45px;
-    height: 48px;
-    display: flex;
-    justify-content: center;
-    z-index: 1;
-    right: 24px;
-    position: relative;
-    padding: 0;
-    top: 2px;
-    img {
-      width: 20px;
+    .span-icon {
+      height: 50px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
     }
   }
-  &:hover > .pfeil {
-    background: crimson;
-    width: 100%;
-  }*/
+
 }
