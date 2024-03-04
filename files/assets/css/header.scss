@@ -42,3 +42,17 @@
     }
   }
 }
+
+@media screen and (max-width: 1025px) {
+  #header {
+    height: 100px;
+    .inside {
+      height: 100%;
+    }
+  }
+  .header-bar {
+    background: transparent;
+    box-shadow: none;
+    width: 90%;
+  }
+}

@@ -1,0 +1,48 @@
+@import "variables";
+
+.mod_mobile_menu {
+  display: none;
+}
+
+
+@media screen and (max-width: 1025px) {
+  .mod_mobile_menu {
+    display: block;
+    position: relative;
+    top: 40px;
+    cursor: pointer;
+  }
+  .header-bar .mod_navigation {
+    display: none;
+  }
+  .mobile_menu .inner {
+    background: white;
+    .menu-close {
+      position: relative;
+      top: 10px;
+      left: 20px;
+      font-size: 70px;
+      color: $blue;
+    }
+    .menu-nav {
+      .mod_navigation {
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        ul {
+          li {
+            padding: 15px 0;
+            font: normal normal normal 22px/36px Open Sans;
+            text-transform: uppercase;
+            a {
+              color: $blue;
+            }
+            strong {
+              color: $orange;
+            }
+          }
+        }
+      }
+    }
+  }
+}

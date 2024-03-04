@@ -2,7 +2,7 @@
 
 .header-image {
   position: relative;
-  img {
+  .img {
     width: 100%;
  /*   height: 70vh;*/
     object-fit: cover;
@@ -63,7 +63,8 @@
   border-radius: 10px;
   text-align: center;
   .content-text {
-    height: 211px;
+   /* height: 211px;*/
+    padding-bottom: 30px;
     h2 {
       display: inline-block;
       position: relative;
@@ -89,6 +90,8 @@
       }
     }
     p {
+      width: 80%;
+      margin: 0 auto;
       font: normal normal normal 24px/36px Open Sans;
     }
   }
@@ -117,9 +120,9 @@
       display: flex;
       justify-content: space-between;
       width: 90%;
-      margin: 50px auto;
+      margin: 0 auto;
       flex-wrap: wrap;
-      padding-top: 45px;
+      padding: 70px 0 50px;
       .block-box {
         width: 30%;
         padding: 15px;
@@ -132,9 +135,9 @@
           text-transform: uppercase;
           font: normal normal 600 26px/36px Open Sans;
         }
-        p {
+        /*p {
           font: normal normal normal 22px/30px Open Sans;
-        }
+        }*/
         &:first-child {
           h3 {
             color: $blue;
@@ -313,6 +316,83 @@
 
 .appointment-booking {
   padding: 50px 0;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: block;
+}
+
+@media screen and (max-width: 1025px)  {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+    img {
+      width: 100%;
+    }
+  }
+  .header-image .logo.content-image {
+    bottom: 30vw;
+    width: 90%;
+    img {
+      width: 310px;
+      height: 145px;
+    }
+  }
+  .appointment-block {
+    top: 45vw;
+    right: 6vw;
+    height: 112px;
+    width: 120px;
+    .appointment {
+      height: 78px;
+      .content-text p {
+        font: normal normal 600 12px/18px Open Sans;
+      }
+    }
+  }
+  .news-teaser .content-text  {
+    h2 {
+      font-size: 26px;
+    }
+    p {
+      font: normal normal normal 18px/28px Open Sans;
+    }
+  }
+  .welcome .content-element-group .content-block {
+    width: 100%;
+    .block-box {
+      width: 100%;
+      padding: 0;
+      &:not(:last-child) {
+        border-right: none;
+        border-bottom: 2px solid #7E7E7E;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .welcome, .handling {
+    padding: 10px 0 50px;
+  }
+  .practice .text-gallery {
+    float: none;
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0;
+    .teaser-left {
+      width: 100%;
+      .content-text h2 {
+        font-size: 26px;
+      }
+    }
+  }
 }
 
 

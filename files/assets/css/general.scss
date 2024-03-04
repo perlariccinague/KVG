@@ -27,6 +27,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
 }
 
 ul {
@@ -77,61 +78,9 @@ p {
   }
 }
 
-/*.block-link-button, .button p, .teaser-left p, .widget.widget-submit{
-  a, .submit{
-    position: relative;
-    display: inline-block;
-    z-index: 1;
-    padding: 5px 30px;
-    background: transparent;
-    text-align: center;
-    font: normal normal normal 24px/36px Open Sans;
-    color: $blue;
-    text-transform: uppercase;
-    transition: color .3s;
-    &:before {
-      left: 0;
-      z-index: -2;
-      width: 100%;
-      height: 100%;
-      box-shadow: 0px 5px 10px #00000029;
-      border: 2px solid #639EC8;
-      border-radius: 10px;
-      display: none;
-    }
-    &:after {
-      display: inline-block;
-      right: -40px;
-      z-index: -1;
-      box-sizing: content-box;
-      width: 45px;
-      height: 50px;
-      border-radius: 0 10px 10px 0;
-      background: $blue url("/files/assets/layout/pfeil-left-white.svg") no-repeat 50% center;
-      transition: all .3s;
-      display: none;
-    }
-    &:before, &:after {
-      position: absolute;
-      content: "";
-      top: 0;
-    }
-    &:hover {
-      color: white;
-      &:after {
-        width: 100%;
-        padding-left: 42px;
-        border-radius: 10px;
-      !*  background-position-x: 90%;*!
-      }
-    }
-  }
-}*/
-
-
-
 .block-link-button, .widget.widget-submit {
   padding: 10px 0;
+  padding-right: 50px;
   a, .submit{
     position: relative;
    /* display: inline-block;*/
@@ -152,7 +101,7 @@ p {
       right: -35px;
       width: 45px;
       height: 54px;
-      background: $blue;
+      background: #387AA9;
       border-top-right-radius: 10px;
       border-bottom-right-radius: 10px;
       transition: all 250ms;
@@ -162,8 +111,6 @@ p {
         bottom: 0;
         margin: auto;
         right: 13px;
-       /* left: 50%;
-        transform: translateX(-50%);*/
       }
     }
     .button-text {
@@ -188,13 +135,25 @@ p {
   }
 }
 
-.to-top-button {
+.biography #myBtn {
+  padding: 0;
+  .burger-button {
+    &:after {
+      max-width: 225px;
+    }
+  }
+  &.active {
+    padding: 10px 0 50px;
+  }
+}
+
+.to-top-button, #myBtn{
   text-align: center;
   position: relative;
   display: flex;
   justify-content: center;
   padding: 20px 0 50px;
-  .burger-botton {
+  .burger-button {
     width: 65px;
     height: 65px;
     background-color: transparent;
@@ -231,6 +190,31 @@ p {
     }
     .icon-hover {
       display: none;
+    }
+  }
+}
+
+#more {
+  display: none;
+}
+
+.mobile_menu_active {
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 1025px) {
+  p {
+    font: normal normal normal 18px/28px Open Sans;
+  }
+  .block-link-button {
+    a {
+      padding: 5px 25px;
+      .button-text {
+        font-size: 20px;
+      }
+      .span-icon {
+        height: 44px;
+      }
     }
   }
 }

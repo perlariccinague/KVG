@@ -3,8 +3,9 @@
 #footer {
   width: 100%;
  /* padding: 100px 0 90px;*/
-  background: url("/files/assets/layout/MicrosoftTeams-image (8).png") no-repeat right top;
-  background-size: 100%;
+  background: url("/files/assets/layout/MicrosoftTeams-image (8).png") right top no-repeat ;
+  background-size: cover;
+  height: auto;
 }
 
 .footer {
