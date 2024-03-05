@@ -2,7 +2,7 @@
 
 .header-image {
   position: relative;
-  .img {
+  .desktop-only img {
     width: 100%;
  /*   height: 70vh;*/
     object-fit: cover;
@@ -105,12 +105,48 @@
   padding-bottom: 50px;
 }
 
+.welcome, .performances {
+  h2 {
+    display: block;
+    position: relative;
+    padding: 0;
+    color: $orange;
+    text-transform: uppercase;
+    font: normal normal 600 50px/36px Open Sans;
+    width: 90%;
+    margin: 0 auto 50px;
+    max-width: 1350px;
+    background: white;
+    .line {
+      border-top: 2px solid $orange;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+    }
+    span {
+      position: relative;
+      background: white;
+      padding: 0 50px;
+    }
+  }
+}
+
+.performances h2 {
+  background: $rosa;
+  span {
+    background: $rosa;
+  }
+}
 
 .welcome, .performances {
   .content-element-group {
     text-align: center;
     font: normal normal normal 22px/30px Open Sans;
     .welcome-teaser {
+      width: 90%;
+      margin: 0 auto;
+      max-width: 1200px;
       .rte {
         max-width: 1315px;
         margin: 0 auto;
@@ -171,7 +207,7 @@
     padding: 100px 0;
   }
   .performance-box {
-    width: 20%;
+    width: 19%;
     text-align: center;
     img {
       width: 100px;
@@ -230,6 +266,10 @@
       }
     }
   }
+}
+
+.handling .block-link-button {
+  padding-right: 0;
 }
 
 .teaser-left .block-link-button {
@@ -322,15 +362,14 @@
   display: none;
 }
 
-.desktop-only {
-  display: block;
-}
-
 @media screen and (max-width: 1025px)  {
   .desktop-only {
     display: none;
   }
   .mobile-only {
+    display: block;
+  }
+   .header-image .mobile-only {
     display: block;
     img {
       width: 100%;
@@ -378,7 +417,7 @@
     }
   }
 
-  .welcome, .handling {
+  .welcome {
     padding: 10px 0 50px;
   }
   .practice .text-gallery {
@@ -390,6 +429,67 @@
       width: 100%;
       .content-text h2 {
         font-size: 26px;
+      }
+    }
+  }
+  .welcome-teaser h2 {
+    font-size: 26px;
+  }
+
+  .performances {
+    margin-bottom: 30px;
+    .content-element-group {
+      width: 85%;
+      margin: 0 auto;
+      &:first-child {
+        padding: 35px 0;
+      }
+      .performance-block {
+        padding: 35px 0;
+        .performance-box {
+          width: 45%;
+          img {
+            width: 60px;
+            height: 65px;
+          }
+          h3 {
+            font: normal normal normal 14px/20px Open Sans;
+            text-align: center;
+          }
+          &:not(:last-child) {
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+  .welcome .content-element-group .content-block .block-box .block-link-button a {
+    padding: 5px 25px;
+  }
+
+  .handling {
+    .content-element-group {
+      h2 {
+        font: normal normal 600 26px/36px Open Sans;
+      }
+      .content-text {
+        margin-top: 0;
+        h3 {
+          font: normal normal normal 18px/28px Open Sans;
+
+        }
+      }
+    }
+    .buttons-links {
+      margin-right: 35px;
+      display: block;
+      .content-text {
+        width: 100%;
+        padding-bottom: 0;
+        .block-link-button {
+          width: 100%;
+          padding-right: 0;
+        }
       }
     }
   }

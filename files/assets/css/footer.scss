@@ -111,3 +111,33 @@
     }
   }
 }
+.mobile-only {
+  display: none;
+}
+
+@media screen and (max-width: 1025px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .footer-left {
+    width: 100%;
+    img {
+      width: 210px;
+    }
+    h3 {
+      font: normal normal 600 20px/27px Open Sans;
+      padding: 20px 0 0;
+    }
+    .content-element-group .content-text {
+      h2 {
+        font: normal normal 600 16px/22px Open Sans;
+      }
+    }
+    .mod_customnav {
+      margin-top: -0;
+    }
+  }
+}

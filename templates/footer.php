@@ -6,7 +6,7 @@
         </svg>
     </a>
 </div>
-<div class="footer">
+<div class="footer desktop-only">
     <div class="footer-left">
         {{insert_content::44}}
         {{insert_content::47}}
@@ -16,4 +16,17 @@
         <div class="form-teaser"><h3>Kontaktformular</h3></div>
         {{insert_form::1}}
     </div>
+</div>
+
+<div class="footer mobile-only">
+    <div class="footer-left">
+        {{insert_content::44}}
+        {{insert_content::47}}
+       <!-- {{insert_content::45}}-->
+        {{insert_module::4}}
+    </div>
+    <!--<div class="footer-right">
+        <div class="form-teaser"><h3>Kontaktformular</h3></div>
+        {{insert_form::1}}
+    </div>-->
 </div>

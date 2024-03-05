@@ -150,3 +150,30 @@
     right: 15%;
   }
 }
+
+@media screen and (max-width: 1025px) {
+  .practice {
+    .slider-container {
+      display: none;
+    }
+    #btn-practice {
+      text-align: center;
+    }
+    .rsts-skin-default .rsts-nav {
+      right: initial !important;
+      bottom: 12px;
+      left: 50% !important;
+      transform: translateX(-50%);
+    }
+    .rsts-skin-default .rsts-nav-bullets a {
+      width: 15px !important;
+      height: 15px !important;
+      border: 2px solid white;
+      background: transparent !important;
+      &.active {
+        box-shadow: none !important;
+        background: white !important;
+      }
+    }
+  }
+}
