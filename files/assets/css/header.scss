@@ -43,6 +43,12 @@
   }
 }
 
+@media screen and (max-width: 1400px) {
+  .header-bar .mod_navigation ul {
+    margin: 25px auto;
+  }
+}
+
 @media screen and (max-width: 1025px) {
   #header {
     height: 100px;

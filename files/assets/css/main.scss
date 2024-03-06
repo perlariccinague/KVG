@@ -105,6 +105,10 @@
   padding-bottom: 50px;
 }
 
+.practice-block {
+  margin-top: 50px;
+}
+
 .welcome, .performances {
   h2 {
     display: block;
@@ -118,7 +122,7 @@
     max-width: 1350px;
     background: white;
     .line {
-      border-top: 2px solid $orange;
+      border-top: 1px solid $orange;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -127,7 +131,7 @@
     span {
       position: relative;
       background: white;
-      padding: 0 50px;
+      padding: 0 30px;
     }
   }
 }
@@ -160,8 +164,9 @@
       flex-wrap: wrap;
       padding: 70px 0 50px;
       .block-box {
-        width: 30%;
-        padding: 15px;
+        width: 33%;
+        padding-top: 15px;
+        padding-bottom: 15px;
         text-align: center;
         .icon {
           width: 97px;
@@ -191,7 +196,7 @@
         }
         &:not(:last-child) {
           border-right: 2px solid $gray;
-          padding-right: 15px;
+          /*padding-right: 15px;*/
         }
 
       }
@@ -301,10 +306,10 @@
     padding: 100px 0;
     align-items: center;
     .teaser-left {
-      width: 30%;
+      width: 35%;
       .content-text {
         h2 {
-          font: normal normal 600 50px/36px Open Sans;
+          font: normal normal 600 45px/36px Open Sans;
           text-transform: uppercase;
         }
       }
@@ -313,14 +318,12 @@
 }
 
 #teams {
-  background: url("/files/assets/layout/background-team.png") no-repeat;
+  background: url("/files/assets/layout/background-team.png") 0/cover no-repeat;
   width: 100%;
-  background-size: 100%;
   height: auto;
   position: relative;
   z-index: 2;
   margin-top: -11px;
-  padding-bottom: 80px;
   &.practice .text-gallery .teaser-left .content-text {
     color: white;
   }
@@ -362,7 +365,25 @@
   display: none;
 }
 
-@media screen and (max-width: 1025px)  {
+@media screen and (max-width: 1400px) {
+  .welcome, .performances {
+    h2 {
+      font-size: 35px;
+    }
+  }
+
+  .header-image .logo.content-image {
+    bottom: 50px;
+    img {
+      width: 340px;
+    }
+  }
+  .biography .text-image .content-element-group .content-text h2 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
   .desktop-only {
     display: none;
   }
@@ -492,6 +513,37 @@
         }
       }
     }
+  }
+
+  .welcome, .performances {
+    h2 {
+      margin-bottom: 20px;
+      font-size: 26px;
+      span {
+        padding: 0 15px;
+      }
+    }
+  }
+
+  .biography .text-image .content-element-group {
+    width: 100%;
+    .content-text {
+      h2 {
+        font: normal normal 600 26px/32px Open Sans;
+      }
+      h3 {
+        font: normal normal normal 22px/32px Open Sans;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  #calendar.welcome h2 {
+    font-size: 22px;
+  }
+
+  .appointment-booking {
+    padding: 20px 0;
   }
 }
 

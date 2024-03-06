@@ -4,8 +4,9 @@ const totalItems = carouselItems.length;
 let currentIndex = 0;
 const singleSlideWidth = document.querySelector(".slide").getBoundingClientRect().width;
 const dotsContainer = document.querySelector('.dots');
+const marginSlides = document.querySelector(".slides").getBoundingClientRect().width;
 
-console.log(singleSlideWidth)
+console.log(marginSlides/100)
 
 function showSlide(index) {
     if (index < 0) {
@@ -14,7 +15,7 @@ function showSlide(index) {
         index = 0;
     }
 
-    const offset = -index * singleSlideWidth; // Adjust 300 to your item width
+    const offset = -(index * ( marginSlides/100 + singleSlideWidth));
     carouselContainer.style.transform = `translateX(${offset}px)`;
     currentIndex = index;
     updateDots();

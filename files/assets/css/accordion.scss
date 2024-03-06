@@ -98,4 +98,36 @@
   left: 5px;
 }
 
+@media screen and (max-width: 1025px) {
+  .welcome .content-accordion {
+    padding-top: 0px;
+    .handorgel__header {
+      width: 100%;
+      button {
+        padding: 15px 55px;
+        font: normal normal 600 17px/30px Open Sans;
+        &:before {
+          left: 0;
+          width: 40px;
+        }
+        &:after {
+          right: 0;
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+    .handorgel__content {
+      padding: 0 40px;
+    }
+  }
+  .welcome .content-accordion #handorgel1-fold10-header button {
+    padding: 15px 75px;
+    &:before {
+      width: 71px;
+      left: 0;
+    }
+  }
+}
+
 
