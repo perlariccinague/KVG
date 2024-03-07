@@ -361,6 +361,11 @@
   padding: 50px 0;
 }
 
+.contact .handling .buttons-links #contact,
+.deadline .handling .buttons-links #appointment {
+  display: none;
+}
+
 .mobile-only {
   display: none;
 }
@@ -520,7 +525,8 @@
       margin-bottom: 20px;
       font-size: 26px;
       span {
-        padding: 0 15px;
+        padding: 1px 15px;
+        box-decoration-break: clone;
       }
     }
   }
@@ -544,6 +550,22 @@
 
   .appointment-booking {
     padding: 20px 0;
+  }
+
+
+}
+
+@media screen and (max-width: 500px) {
+  #practice, #asked-questions{
+    &.welcome h2 span {
+      padding: 1px 0;
+      box-decoration-break: clone;
+      max-width: 228px;
+      display: inline-block;
+    }
+  }
+  #calendar.welcome h2 span {
+    padding: 1px 5px;
   }
 }
 

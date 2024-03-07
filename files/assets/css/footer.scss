@@ -3,9 +3,10 @@
 #footer {
   width: 100%;
  /* padding: 100px 0 90px;*/
-  background: url("/files/assets/layout/MicrosoftTeams-image (8).png") right top no-repeat ;
+  background: url("/files/assets/layout/Footer_bild 1.png") center top no-repeat ;
   background-size: cover;
   height: auto;
+  padding-top: 8vw;
 }
 
 .footer {
@@ -31,7 +32,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 430px;
+    max-width: 530px;
     .content-text {
       h2 {
         font: normal normal 600 24px/33px Open Sans;
@@ -83,7 +84,7 @@
     }
   }
   .mod_customnav {
-    margin-top: -40px;
+    margin-top: -35px;
     ul {
       li {
         font: normal normal 600 18px/24px Open Sans;
@@ -100,15 +101,33 @@
   }
 }
 
+.contact .footer-right {
+  display: none;
+}
+
 .map-icon {
-  position: absolute;
-  left: 65vw;
-  top: 7vw;
+  position: relative;
+ /* left: 65vw;
+  top: 8vw;*/
+  top: -40px;
   .marker {
     color: white;
+    width: 30px;
     transition: color 250ms;
     &:hover {
       color: $orange;
+    }
+  }
+  span {
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 40px;
+    font: normal normal 300 18px/30px Open Sans;
+    transition: color 250ms;
+    &:hover {
+      color: $orange ;
     }
   }
 }
@@ -124,7 +143,7 @@
     display: block;
   }
   #footer {
-    background: url("/files/assets/layout/Footer-mobile.png") right top no-repeat ;
+    background: url("/files/assets/layout/Footer-mobile 1.png") right top no-repeat ;
     background-size: cover;
   }
   .footer-left {
@@ -146,10 +165,13 @@
     }
   }
   .map-icon {
-    left: 78vw;
-    top: 24vw;
+    /*left: 78vw;*/
+    top: -13px;
     .marker {
-      width: 30px;
+      width: 25px;
+    }
+    span {
+      left: 35px;
     }
   }
 }

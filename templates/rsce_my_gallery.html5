@@ -9,7 +9,7 @@
         </div>
     </div>
     <div class="button-gallery">
-        <span class="prev"><img src="files/assets/layout/arrow-right.svg" alt=""></span>
+        <span class="prev"><img src="files/assets/layout/arrow-left.svg" alt=""></span>
         <span class="next"><img src="files/assets/layout/arrow-right.svg" alt=""></span>
     </div>
 </div>
