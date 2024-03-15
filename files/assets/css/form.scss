@@ -108,8 +108,10 @@
     }
   }
 }
-.footer-right .widget-checkbox fieldset span input:checked ~ label::before {
-  background: $blue;
+.footer-right, .contact-form {
+  .widget-checkbox fieldset span input:checked ~ label::before {
+    background: $blue;
+  }
 }
 
 .footer-right {

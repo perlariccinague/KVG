@@ -15,6 +15,11 @@ ul {
   list-style: none;
 }
 
+h3 {
+  font: normal normal 600 36px/50px Open Sans;
+  text-transform: uppercase;
+}
+
 a {
   text-decoration: none;
 }
@@ -118,7 +123,7 @@ p {
   padding: 0;
   .burger-button {
     &:after {
-      max-width: 225px;
+      max-width: 200px;
     }
   }
   &.active {

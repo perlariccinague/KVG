@@ -176,9 +176,10 @@
           text-transform: uppercase;
           font: normal normal 600 26px/36px Open Sans;
         }
-        /*p {
-          font: normal normal normal 22px/30px Open Sans;
-        }*/
+        p {
+          font: normal normal normal 20px/30px Open Sans;
+          padding: 0 20px;
+        }
         &:first-child {
           h3 {
             color: $blue;
@@ -204,13 +205,13 @@
   }
 }
 
-.performances {
-  background: $rosa;
-  margin-bottom: 100px;
-
-  .content-element-group:first-child {
-    padding: 100px 0;
-  }
+.performance-block {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 70px 0 50px;
   .performance-box {
     width: 19%;
     text-align: center;
@@ -224,6 +225,27 @@
       color: $gray;
     }
   }
+}
+
+.performances {
+  background: $rosa;
+  margin-bottom: 100px;
+  .content-element-group:first-child {
+    padding: 100px 0;
+  }
+  /*.performance-box {
+    width: 19%;
+    text-align: center;
+    img {
+      width: 100px;
+      height: 95px;
+    }
+    h3 {
+      font: normal normal normal 24px/32px Open Sans;
+      text-transform: uppercase;
+      color: $gray;
+    }
+  }*/
 }
 
 .handling {
@@ -352,6 +374,18 @@
          padding-bottom: 15px;
          color: $orange;
        }
+       ul {
+         list-style: inside;
+        li {
+          font: normal normal normal 20px/36px Open Sans;
+          position: relative;
+          margin-left: 20px;
+          list-style: disc;
+          &::marker {
+            color: $orange;
+          }
+        }
+       }
      }
     }
   }
@@ -365,6 +399,96 @@
 .deadline .handling .buttons-links #appointment {
   display: none;
 }
+
+.welcome .contact-block {
+  width: 90%;
+  max-width: 1313px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  flex-wrap: wrap;
+  padding-top: 120px;
+  font-size: 20px;
+  .opening-hours, .links{
+    width: 46%;
+    h2 {
+      margin-bottom: 0;
+      font: normal normal 600 36px/50px Open Sans;
+    }
+  }
+  .opening-hours {
+    border-right: 2px solid;
+    padding-right: 55px;
+    text-align: right;
+  }
+  .links {
+    h2 {
+      color: $blue;
+    }
+    ul {
+      margin-top: 15px;
+      padding-left: 35px;
+      li {
+        list-style: disc;
+        a {
+          color: black;
+          transition: color 250ms;
+          &:hover {
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
+}
+
+#services {
+  .performance-box {
+    h3 {
+      font: normal normal normal 15px/30px Open Sans;
+    }
+  }
+}
+#asked-questions.welcome {
+  padding-bottom: 50px;
+}
+
+/*
+#content_element_group_leistungen {
+  display: flex;
+  justify-content: space-between;
+}
+
+#content_element_group_leistungen .performance-box {
+  width: 120px;
+}
+
+#content_element_group_leistungen {
+  margin-top: 100px;
+}
+
+#content_element_group_leistungen .performance-box h3 {
+  font-size: 26px;
+}
+
+#content_element_group_leistungen .performance-box {
+  !* width: 120px; *!
+  width: 290px;
+}
+
+#content_element_group_leistungen .performance-box img {
+  width: 45%;
+}
+
+#content_element_group_leistungen .performance-box h3 {
+  !* font-size: 26px; *!
+ !* font-size: 24px;*!
+  font: normal normal normal 20px/30px Open Sans;
+}
+*/
+
+
 
 .mobile-only {
   display: none;
@@ -555,7 +679,27 @@
     padding: 20px 0;
   }
 
-
+  .welcome .contact-block {
+    padding-top: 60px;
+    .opening-hours, .links {
+      width: 100%;
+      text-align: left;
+      h2 {
+        font-size: 26px;
+        margin: 0;
+        line-height: 36px;
+      }
+    }
+    .opening-hours {
+      border: 0;
+      padding-right: 0;
+    }
+    .links {
+      ul {
+        padding-left: 20px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 500px) {
