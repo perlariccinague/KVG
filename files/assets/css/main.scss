@@ -98,7 +98,7 @@
 }
 
 .welcome, .handling {
-  padding: 30px 0 100px;
+  padding: 60px 0 100px;
 }
 
 .handling {
@@ -107,6 +107,9 @@
 
 .practice-block {
   margin-top: 50px;
+  .formular {
+    padding-bottom: 100px;
+  }
 }
 
 .welcome, .performances {
@@ -118,7 +121,7 @@
     text-transform: uppercase;
     font: normal normal 600 50px/36px Open Sans;
     width: 90%;
-    margin: 0 auto 50px;
+    margin: 0 auto 70px;
     max-width: 1350px;
     background: white;
     .line {
@@ -136,10 +139,14 @@
   }
 }
 
-.performances h2 {
-  background: $rosa;
-  span {
+.performances {
+  box-shadow: 0 5px 10px #00000029;
+  border-radius: 10px;
+  h2 {
     background: $rosa;
+    span {
+      background: $rosa;
+    }
   }
 }
 
@@ -162,7 +169,7 @@
       width: 90%;
       margin: 0 auto;
       flex-wrap: wrap;
-      padding: 70px 0 50px;
+      padding: 90px 0 50px;
       .block-box {
         width: 33%;
         padding-top: 15px;
@@ -205,16 +212,27 @@
   }
 }
 
+.welcome .block-box {
+  margin-bottom: 70px;
+  h3 {
+    font: normal normal 600 26px/50px Open Sans;
+  }
+}
+
 .performance-block {
   display: flex;
-  justify-content: space-between;
+/*  justify-content: space-around;*/
+  justify-content: center;
   width: 90%;
   margin: 0 auto;
   flex-wrap: wrap;
   padding: 70px 0 50px;
   .performance-box {
-    width: 19%;
+    /*width: 19%;*/
     text-align: center;
+    width: 18%;
+    padding: 20px 0px;
+
     img {
       width: 100px;
       height: 95px;
@@ -419,7 +437,7 @@
   }
   .opening-hours {
     border-right: 2px solid;
-    padding-right: 55px;
+    padding-right: 40px;
     text-align: right;
   }
   .links {
@@ -428,7 +446,7 @@
     }
     ul {
       margin-top: 15px;
-      padding-left: 35px;
+      padding-left: 26px;
       li {
         list-style: disc;
         a {
@@ -443,14 +461,32 @@
   }
 }
 
+.welcome .contact-block {
+  padding-top: 60px;
+  background: #FFEBE1;
+  padding-bottom: 50px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px #00000029;
+  h2 {
+    background-color: transparent;
+  }
+}
+
 #services {
+  background: $rosa;
+  box-shadow: 0 5px 10px #00000029;
+  border-radius: 10px;
   .performance-box {
     h3 {
-      font: normal normal normal 15px/30px Open Sans;
+      font: normal normal normal 18px/26px Open Sans;
     }
   }
 }
 #asked-questions.welcome {
+  padding-bottom: 50px;
+}
+
+#asked-questions .content-element-group {
   padding-bottom: 50px;
 }
 
@@ -512,6 +548,10 @@
   }
   .performances .performance-box h3 {
     font-size: 20px;
+  }
+
+  #services.performance-block .performance-box {
+    width: 23%;
   }
 }
 
@@ -701,6 +741,7 @@
     }
   }
 }
+
 
 @media screen and (max-width: 500px) {
   #practice, #asked-questions{
