@@ -156,7 +156,7 @@
 }
 
 @media screen and (max-width: 1025px) {
-  .practice, #practice-block {
+  .practice, #practice-block, #practice {
     .slider-container {
       display: none;
     }
@@ -178,6 +178,12 @@
         box-shadow: none !important;
         background: white !important;
       }
+    }
+    .rsts-skin-default .rsts-active .rsts-caption {
+      font-size: 12px;
+      margin-right: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
     }
   }
 

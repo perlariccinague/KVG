@@ -26,8 +26,8 @@ return array(
             'inputType' => 'textarea',
         ),
         'link' => array(
-            'label' => array('Link', 'Auf welche Seite soll diese Box verlinken?'),
-            'inputType' => 'pageTree'
+            'label' => array('Link', 'Auf welche Seite soll den Block verlinken?'),
+            'inputType' => 'url'
         ),
     )
 );

@@ -9,7 +9,7 @@
   }
   .logo.content-image {
     position: absolute;
-    bottom: 170px;
+    bottom: 230px;
     width: 80%;
     max-width: 1500px;
     margin: 0 auto;
@@ -24,7 +24,7 @@
 
 .appointment-block {
   position: absolute;
-  top: 26vw;
+  top: 24vw;
   right: 8vw;
   z-index: 1;
   transform: translateY(-50%);
@@ -109,6 +109,15 @@
   margin-top: 50px;
   .formular {
     padding-bottom: 100px;
+  }
+  p {
+    a {
+      color: $blue;
+      transition: color 250ms;
+      &:hover {
+        color: $orange;
+      }
+    }
   }
 }
 
@@ -490,41 +499,6 @@
   padding-bottom: 50px;
 }
 
-/*
-#content_element_group_leistungen {
-  display: flex;
-  justify-content: space-between;
-}
-
-#content_element_group_leistungen .performance-box {
-  width: 120px;
-}
-
-#content_element_group_leistungen {
-  margin-top: 100px;
-}
-
-#content_element_group_leistungen .performance-box h3 {
-  font-size: 26px;
-}
-
-#content_element_group_leistungen .performance-box {
-  !* width: 120px; *!
-  width: 290px;
-}
-
-#content_element_group_leistungen .performance-box img {
-  width: 45%;
-}
-
-#content_element_group_leistungen .performance-box h3 {
-  !* font-size: 26px; *!
- !* font-size: 24px;*!
-  font: normal normal normal 20px/30px Open Sans;
-}
-*/
-
-
 
 .mobile-only {
   display: none;
@@ -551,7 +525,8 @@
   }
 
   #services.performance-block .performance-box {
-    width: 23%;
+    /*width: 23%;*/
+    width: 100%;
   }
 }
 
@@ -733,11 +708,26 @@
     .opening-hours {
       border: 0;
       padding-right: 0;
+      h2, p {
+        padding: 0 15px;
+      }
     }
     .links {
       ul {
-        padding-left: 20px;
+        padding-left: 35px;
       }
+      h2 {
+        padding: 0 15px;
+      }
+    }
+  }
+    #welcome .block-box .block-link-button a .span-icon {
+     height: 49.5px;
+   }
+  #performance-home .block-link-button {
+    padding: 10px 25px 10px 0;
+     a .span-icon {
+      height: 43.5px;
     }
   }
 }

@@ -3,11 +3,15 @@
     <h3><?= $this->titel ?></h3>
     <p><?= $this->description ?></p>
     <div class="block-link-button">
-        <a href="{{link_url::<?= $this->link ?>}}">
+  <!--      <a href="{{link_url::<?/*= $this->link */?>}}">-->
+        <a href="<?= $this->link ?>">
             <span class="button-text">Mehr</span>
             <span class="span-icon">
-                <img src="files/assets/layout/pfeil-left-white.svg" alt="">
+                <img src="files/assets/layout/pfeil-left-white.svg" alt="Pfeil">
             </span>
         </a>
     </div>
 </div>
+
+
+
