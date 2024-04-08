@@ -41,7 +41,7 @@
     width: 26px;
     border: none;
     cursor: pointer;
-    margin: 0 80px;
+    margin: 0 85px;
     outline: 0;
     background: transparent;
     transition: 0.3s;
@@ -168,6 +168,7 @@
       bottom: 12px;
       left: 50% !important;
       transform: translateX(-50%);
+      display: none;
     }
     .rsts-skin-default .rsts-nav-bullets a {
       width: 15px !important;
@@ -180,10 +181,13 @@
       }
     }
     .rsts-skin-default .rsts-active .rsts-caption {
-      font-size: 12px;
-      margin-right: 0;
+      font-size: 15px;
+      line-height: 1.6em;
+      width: 90%;
       left: 50%;
-      transform: translate(-50%, 0);
+      transform: translateX(-50%);
+      margin-right: 0;
+     /* display: none;*/
     }
   }
 
@@ -195,5 +199,13 @@
         background: $blue !important;
       }
     }
+  }
+  #teams.practice .text-gallery {
+    .rsts-skin-default.rsts-main {
+      overflow: visible;
+    }
+  }
+  #teams.practice .rsts-skin-default .rsts-nav {
+    bottom: -55px;
   }
 }
